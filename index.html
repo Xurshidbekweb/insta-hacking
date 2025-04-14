@@ -60,5 +60,28 @@
       <p>Don't have an account? <a href="#">Sign up</a></p>
     </div>
   </div>
+    <script>
+    // Add event listener for form submission
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      // Prevent the form from submitting (page reload)
+      event.preventDefault();
+
+      // Get input values
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Output values in the console (for testing)
+      console.log("Username:", username);
+      console.log("Password:", password);
+
+      // Optionally, you can add further actions, like form validation or sending data to a server
+      // For example:
+      if (username && password) {
+        alert('Login successful');
+      } else {
+        alert('Please enter both username and password');
+      }
+    });
+  </script>
 </body>
 </html>
