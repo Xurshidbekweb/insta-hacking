@@ -51,7 +51,7 @@
 <body>
   <div class="login-box">
     <h2>Login</h2>
-    <form>
+    <form id="loginForm">
       <input type="text" id="username" placeholder="Phone number, username, or email" required />
       <input type="password" id="password" placeholder="Password" required />
       <button type="submit">Log In</button>
@@ -60,7 +60,8 @@
       <p>Don't have an account? <a href="#">Sign up</a></p>
     </div>
   </div>
-    <script>
+
+  <script>
     // Add event listener for form submission
     document.getElementById('loginForm').addEventListener('submit', function(event) {
       // Prevent the form from submitting (page reload)
@@ -85,3 +86,4 @@
   </script>
 </body>
 </html>
+
